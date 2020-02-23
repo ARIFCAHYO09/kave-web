@@ -1,0 +1,17 @@
+.btn-aktif {
+    background: #DCEDFB;
+    /* JAYA UTAMA */
+    border: 1px solid #2F74AB;
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: #2F74AB;
+}
+
+.btn-mati {
+    background: white;
+    /* JAYA UTAMA */
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: grey;
+}

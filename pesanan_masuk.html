@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+</head>
+
+<body>
+    <div>
+        <br>
+        <h3 style="margin-left: 10%;"> <img src="assets/img/back.png"> Pesanan Masuk</h3>
+        <p style="margin-left: 10%;">4 Pesanan Mengantri</p>
+        <br>
+        <table style="margin-left: 20%;">
+            <tr>
+                <td>
+                    <b data-toggle="modal" data-target="#exampleModal">Arif Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">5 menit yang lalu</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Eko Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">2 bulan yang lalu</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Eko Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">2 bulan yang lalu</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Eko Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">2 bulan yang lalu</p>
+                </td>
+            </tr>
+        </table>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                            <img src="assets/img/user.png" width="40px" height="40px">
+                            <b>Arif Cahyo Prasetyo</b> &nbsp;
+                            <br>
+                            <span style="font-size: 12px;color: grey;">No Pesanan : F-778A</span>
+                            <br>
+                            <img src="assets/img/pembayaran_sukses.png" width="25px" height="25px">
+                            <b style="color : #27AE60;">Telah Melakukan <br> Pembayaran</b>
+                        </center>
+                        <span style="font-size: 12px; color: grey;">Total Pembayaran</span>
+                        <div style="float: right;">
+                            <span style="font-size: 12px; color: grey;">Metode Pembayaran</span>
+                        </div>
+                        <br>
+                        <b>Rp. 52000</b>
+                        <div style="float: right;">
+                            <b>Transfer Bank</b>
+                        </div>
+                        <br>
+                        <br>
+                        <img src="assets/img/pesanan.png" width="25px" height="25px"> &nbsp; <b>
+                            4 Item Pesanan
+                        </b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                        <button data-dismiss="modal" data-target="#exampleModal" id="btn1" style="display: none;">1</button>
+                        <button  data-toggle="modal" data-target="#exampleModal2" id="btn2" style="display: none;">2</button>
+                        <button type="button" class="btn btn-primary" onclick="document.getElementById('btn1').click();document.getElementById('btn2').click()">Lihat Pembayaran</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bukti Pembayaran</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nama Pemesan</p>
+                        <p>Arif Cahyo Prasetyo</p>
+                        <p>Total Pembayaran</p>
+                        <p>Rp. 32.000</p>
+                        <p>Metode Pembayaran</p>
+                        <p>Transfer Bank</p>
+                        <p>Bukti Pembayaran</p>
+                        <center>
+                        <img src="assets/img/bukti.png" width="300px" height="200px">
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" data-target="#exampleModal2" id="btn3" style="display: none;">3</button>
+                        <button data-toggle="modal" data-target="#exampleModal" id="btn4" style="display: none;">4</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="document.getElementById('btn3').click();document.getElementById('btn4').click()">Kembali</button>
+                        <button data-dismiss="modal" data-target="#exampleModal2" id="btn5" style="display: none;">5</button>
+                        <button data-toggle="modal" data-target="#exampleModal3" id="btn6" style="display: none;">6</button>
+                        <button type="button" class="btn btn-primary" onclick="document.getElementById('btn5').click();document.getElementById('btn6').click();">Validasi Pembayaran</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="background: linear-gradient(182.05deg, #30A3E6 -0.28%, #3680BB 49.5%, #23659A 96.26%);">
+                    <div class="modal-body">
+                        <center>
+                            <img src="assets/img/cheklist_big.png" width="75px" height="75px" style="margin-top: 5%;">
+                            <h2 style="color: white;">Pesanan Berhasil Divalidasi</h2>
+                            <p style="color: white;">Pesanan dimasukkan ke antrian untuk diproses.</p>
+                        </center>
+                    </div>
+                    <div class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

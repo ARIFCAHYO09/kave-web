@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/angular.js"></script>
+</head>
+
+<body ng-app="">
+    <div style="background-color: #2F74AB;">
+        <table style=" width: 100%;">
+            <tr>
+                <td width="40%" style="color : white; font-size: 14pt;"><span style="margin-left: 15px;"><br><b
+                            style="margin-left: 10px;">Aktifitas</b></span></td>
+            </tr>
+            <tr height="20px"></tr>
+            <tr style="color: white;">
+                <td width="50%">
+                    <center>Proses</center>
+                </td>
+                <td width="50%">
+                    <center>Selesai</center>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <p style="color: gray;margin-left: 10%;font-size: 14pt;">Bulan ini</p>
+    <table style="width: 100%;">
+        <tr style="background-color: #E7F1F8;">
+            <td width="10%"></td>
+            <td style="margin-top: 10px; width: 70px;"><img src="assets/img/makan2.png" width="60px"></td>
+            <td width="10px"></td>
+            <td style=" width: 230px">
+                <b data-toggle="modal" data-target="#exampleModal">Arif Cahyo</b>
+                <span style="float: right;">14 Des</span>
+                <br>
+                <b>Rp. 50.000 </b>
+                <br>
+                <span style="color: #2F74AB;">Pesan Ulang</span>
+            </td>
+        </tr>
+        <tr height="30px"></tr>
+        <tr>
+            <td width="10%"></td>
+            <td style=" width: 70px;"><img src="assets/img/makan2.png" width="60px"></td>
+            <td width="10px;"></td>
+            <td style=" width: 230px">
+                <b>Eko Cahyo</b>
+                <span style="float: right;">09 Des</span>
+                <br>
+                <span>Rp. 50.000 </span>
+                <br>
+                <span style="color: #2F74AB;">Pesan Ulang</span>
+            </td>
+            <td width=></td>
+        </tr>
+    </table>
+    <br>
+    <p style="color: gray;margin-left: 10%;font-size: 14pt;">November</p>
+    <table style="width: 100%;">
+        <tr style="background-color: #E7F1F8;">
+            <td width="10%"></td>
+            <td style="margin-top: 10px; width: 70px;"><img src="assets/img/makan2.png" width="60px"></td>
+            <td width="10px"></td>
+            <td style=" width: 230px">
+                <b data-toggle="modal" data-target="#exampleModal">Arif Cahyo</b>
+                <span style="float: right;">14 Des</span>
+                <br>
+                <b>Rp. 50.000 </b>
+                <br>
+                <span style="color: #2F74AB;">Pesan Ulang</span>
+            </td>
+        </tr>
+        <tr height="30px"></tr>
+        <tr>
+            <td width="10%"></td>
+            <td style=" width: 70px;"><img src="assets/img/makan2.png" width="60px"></td>
+            <td width="10px;"></td>
+            <td style=" width: 230px">
+                <b>Eko Cahyo</b>
+                <span style="float: right;">09 Des</span>
+                <br>
+                <span>Rp. 50.000 </span>
+                <br>
+                <span style="color: #2F74AB;">Pesan Ulang</span>
+            </td>
+            <td width=></td>
+        </tr>
+    </table>
+    <div ng-include="'footer.html'"></div>
+        <script>
+            $(document).ready(function () {
+                $("#scan").click(function () {
+                    $("#extra").slideToggle();
+                });
+            });
+        </script>
+</body>
+
+</html>

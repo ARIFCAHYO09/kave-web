@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+
+<body ng-app="">
+    <div style="background-color: #3FA0EE;">
+        <table style=" width: 100%;">
+            <tr>
+                <th width="40%" style="color : white;">
+                    <p style="margin-left: 5%;margin-top: 3%;">Riwayat Transaksi</p>
+                </th>
+                <th style="text-align: right;">
+                    <img src="assets/img/filter.png" style="border-radius: 50%; margin-right: 5%;" width="50px"
+                        height="50px" onclick="myFunction()">
+                </th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div style="width: 100%; height: 45x; overflow: scroll; display: none;" id="fil">
+        <div style="width: 1000px;">
+            <button class="btn-large btn-mati" style="margin-left: 10%;"
+                onclick="window.location='dashboard.html'">Lihat Semua</button>
+            <button class="btn-large btn-aktif" style="margin-left: 30px;">Terbaru</button>
+            <button class="btn-large btn-mati" style="margin-left: 30px;">Sesuai Abjad</button>
+            <button class="btn-large btn-mati" style="margin-left: 30px;">Transaksi Tertinggi</button>
+            <button class="btn-large btn-mati" style="margin-left: 30px;">Transaksi Terendah</button>
+        </div>
+    </div>
+
+    <table style="margin: auto;">
+        <tr>
+            <td>
+                <img src="assets/img/wajah.png" width="90px" height="90px" style="border-radius: 50%;margin-top: 25px;">
+            </td>
+            <td width="10px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">Arif Cahyo</b>
+                <p style="color: grey;">12 Desember 2019</p>
+                <button class="btn btn-lg" style="border: 1px solid #2F74AB; border-radius: 16px;color: #2F74AB;"><img src="assets/img/crown.png" width="20px"> 660  poin</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b style="margin-left: 10%; color: #2F74AB;">Riwayat Transaksi</b>
+    <br>
+    <br>
+    <b style="margin-left: 10%;">Bulan Ini</b>
+    <br>
+    <table style="margin-left: 10%; overflow: scroll;">
+        <tr>
+            <td>
+                <img src="assets/img/makan2.png" width="60px" height="60px" style="border-radius: 50%;">
+            </td>
+            <td width="30px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">U-12345</b>
+                <p style="color: grey;">09 Des 2019</p>
+            </td>
+        </tr>
+        <tr style="margin-top: 5%;">
+            <td>
+                <img src="assets/img/makan2.png" width="60px" height="60px" style="border-radius: 50%;">
+            </td>
+            <td width="30px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">S-12345</b>
+                <p style="color: grey;">09 Des 2019</p>
+            </td>
+        </tr>
+        <tr style="margin-top: 5%;">
+            <td>
+                <img src="assets/img/makan2.png" width="60px" height="60px" style="border-radius: 50%;">
+            </td>
+            <td width="30px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">X-1243</b>
+                <p style="color: grey;">Des 2019</p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <b style="margin-left: 10%;">November</b>
+    <br>
+    <table style="margin-left: 10%; overflow: scroll;">
+        <tr style="margin-top: 5%;">
+            <td>
+                <img src="assets/img/makan2.png" width="60px" height="60px" style="border-radius: 50%;">
+            </td>
+            <td width="30px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">F-12345</b>
+                <p style="color: grey;">09 Nov 2019</p>
+            </td>
+        </tr>
+        <tr style="margin-top: 5%;">
+            <td>
+                <img src="assets/img/makan2.png" width="60px" height="60px" style="border-radius: 50%;">
+            </td>
+            <td width="30px"></td>
+            <td>
+                <br>
+                <b data-toggle="modal" data-target="#exampleModal">G-12345</b>
+                <p style="color: grey;">09 Des 2019</p>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 100%; height: 200px;"></div>
+    <div ng-include="'footer.html'">
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/user.png" width="40px" height="40px">
+                    <b>Arif Cahyo Prasetyo</b> &nbsp;
+                    <div style="float: right;margin-top: 10px;">
+                        <img src="assets/img/selesai.png" width="25px" height="25px">
+                        <b style="color : #27AE60;">Selesai</b>
+                    </div>
+                    <br>
+                    <span style="font-size: 12px;margin-left: 45px; color: grey;">No Pesanan : F-778A</span>
+                    <br>
+                    <br>
+                    <span style="font-size: 12px;margin-left: 45px; color: grey;">Total Pembayaran</span>
+                    <div style="float: right;">
+                        <span style="font-size: 12px; color: grey;">Metode Pembayaran</span>
+                    </div>
+                    <br>
+                    <b style="margin-left: 45px;">Rp. 52000</b>
+                    <div style="float: right;">
+                        <b>Transfer Bank</b>
+                    </div>
+                    <br>
+                    <br>
+                    <img src="assets/img/pesanan.png" width="25px" height="25px"> &nbsp; <b>
+                        4 Item Pesanan
+                    </b>
+                    <hr style="border-width: 3px;">
+                    <b>French Fries</b>
+                    <br>
+                    <span style="color : grey;">jumlah : 1</span>
+                    <b style="float: right;">Rp. 12.000</b>
+                    <hr style="border-width: 3px;">
+                    <b>French Fries</b>
+                    <br>
+                    <span style="color : grey;">jumlah : 1</span>
+                    <b style="float: right;">Rp. 12.000</b>
+                    <hr style="border-width: 3px;">
+                    <b>French Fries</b>
+                    <br>
+                    <span style="color : grey;">jumlah : 1</span>
+                    <b style="float: right;">Rp. 12.000</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fil");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

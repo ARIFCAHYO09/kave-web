@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/radio.css">
+</head>
+
+<body>
+    <div style="width: 300px; margin:auto;">
+        <br>
+        <h3> <img src="assets/img/close_biru.png" style=" width: 20px; height: 20px;"> &nbsp; <b>Isi Saldo</b></h3>
+        <br>
+        <b>Metode Isi Saldo</b>
+        <br>
+        <br>
+            <img src="assets/img/Logo_BRI.png" width="90px" height="15px">
+            &nbsp;
+            <b>Transfer Bank</b>
+            <a href="topup.html" style="float: right;">Ganti</a>
+            <br>
+            <br>
+            <div style="background-color: #DCEDFB; border-radius: 15px;">
+                <center>
+                    <br>
+                    <b>
+                        Nomor Akun Kave Member
+                    </b>
+                    <br>
+                    <br>
+                    <h4>
+                        <b style="color: #FF9900;">7891 8190 8819 0910</b>
+                    </h4>
+                    <br>
+                    <button style="background: #FFFFFF;
+                    border: 1px solid #2F74AB;
+                    box-sizing: border-box;
+                    border-radius: 6px;
+                    color: #2F74AB;"
+                    >SALIN KODE</button>
+                    <br>
+                    <br>
+                    <p>Nama Akun</p>
+                    <b>Arif Cahyo Prasetyo</b>
+                    <br>
+                    <p style="color: grey;">*Minimum nilai isi saldo adalah Rp 20.000
+                    *Pengisian saldo bebas dari biaya admin</p>
+                </center>
+            </div>
+            <br>
+            <b>Cara Pembayaran</b>
+            <br>
+            <br>
+            <b id="atm">Petunjuk Transfer ATM BCA</b>
+            <table id="atm2">
+                <tr>
+                    <td width="50px"><div style="background-color: #FFCCA5;border-radius: 50%;width: 25px; height: 25px;"><p style="text-align: center;">1</p></div></td>
+                    <td>Pilih Transaksi Lain > Pembayaran > Lainnya > Permata Bank.</td>
+                </tr>
+                <tr>
+                    <td width="50px">
+                        <div style="background-color: #FFCCA5;border-radius: 50%;width: 25px; height: 25px;">
+                            <p style="text-align: center;">2</p>
+                        </div>
+                    </td>
+                    <td>Masukkan Nomor e-Bank 1130200300097959 kemudian
+                    pilih benar.</td>
+                </tr>
+                <tr>
+                    <td width="50px">
+                        <div style="background-color: #FFCCA5;border-radius: 50%;width: 25px; height: 25px;">
+                            <p style="text-align: center;">3</p>
+                        </div>
+                    </td>
+                    <td>Periksa informasi yang tertera pada layar. Pastikan Pemilik
+                    adalah Saloka Park, dan Total Tagihan sudah benar.</td>
+                </tr>
+            </table>
+            <br>
+            <b>Petunjuk Transfer iBanking <img src="assets/img/next.png"></b>
+            <br>
+            <br>
+            <b>Petunjuk Transfer mBanking <img src="assets/img/next.png"></b>
+            <br>
+            <br>
+            <b>Petunjuk Transfer Setor Tunai <img src="assets/img/next.png"></b>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#atm").click(function () {
+                $("#atm2").slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

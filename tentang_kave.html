@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/switch.css">
+    <script type="text/javascript">
+        var on = 0
+        function cekOn() {
+            if (on == 0) {
+                document.getElementById('on').innerHTML = 'Hidup'
+                on=1
+            } else {
+                document.getElementById('on').innerHTML = 'Mati'
+                on=0
+            }
+            console.log(on);
+        }
+    </script>
+</head>
+<body>
+   <div style="margin: auto;width: 350px;">
+        <br>
+        <h3><img src="assets/img/back.png">&nbsp;Tentang Kave Merchant</h3>
+        <br>
+        <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p style="color: grey;">Kave Merchant 2019 All Right Reserved.</p>
+        <b>Hubungi Kami <img src="assets/img/next.png" style="float: right;"></b>
+        <br>
+        <br>
+        <b>Kirim Masukan<img src="assets/img/next.png" style="float: right;"></b>
+   </div>
+</body>
+</html>

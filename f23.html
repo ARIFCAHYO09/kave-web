@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="assets/css/kolab.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/angular.js"></script>
+</head>
+<body ng-app="">
+    <br>
+    <div style="width: 90%; margin-right: 5%; margin-left: 5%;">
+        <img src="assets/img/back.png"> &nbsp; <b>Kolaborasi</b>
+        <img src="assets/img/pilter.png" class="float-right" width="20px">
+        <br>
+        <br>
+        <div class="menu">
+            <b style="color: #2F74AB; margin-left: 24px;position: absolute;margin-top: 10px;"><img src="assets/img/tempat.png" width="18px" style="margin-right: 14px;">Tempat</b>
+        </div>
+        <div class="menu2">
+            <b style="color: #2F74AB; margin-left: 24px;position: absolute;margin-top: 10px;"><img src="assets/img/acara.png"
+                    width="18px" style="margin-right: 14px;">Acara</b>
+        </div>
+        <div style="margin-left: 5%; margin-top: 105px; margin-right: 5%; width: 90%;">
+            <input type="text" class="form-control">
+        </div>
+        <br>
+        <div ng-include="'acara.html'"></div>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td><img src="assets/img/makan22.jpg"
+                        style="margin-right: 15px; border-radius: 5px; margin-bottom: 10px;min-height: 120px; max-width: 150px; max-height: 150px;"></td>
+                <td>
+                    <b>Memenangkan Persaingan Bisnis F&B Melalui GoFood</b>
+                    <span style="color: gray; text-align: justify;font-size: 12pt;">
+                        <br>
+                        <span>Senin, 5 Mei 2019</span>
+                        <br>
+                        <span>13.00-selesai</span>
+                        <br>
+                        <span>Yogyakarta</span>
+                        <img src="assets/img/lope2.png" width="18px" class="float-right">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

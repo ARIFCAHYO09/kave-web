@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script src="assets/js/cookies.js"></script>
+    <script type="text/javascript">if (getCookie("Bearer") != "") {
+            window.location = "/dashboard.html"
+        }
+    </script>
+</head>
+<body>
+    <div style="margin-left: 5%; margin-right: 5%; width: 90%;">
+        <br>
+        <b><img src="assets/img/back.png">&nbsp;&nbsp;Keranjang</b>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td><img src="assets/img/makan22.jpg" width="100px" height="100px"
+                        style="margin-right: 15px; border-radius: 5px; margin-bottom: 10px;"></td>
+                <td>
+                    <b>Wing Squid <span style="float: right; color: red;">x</span></b>
+                    <br>
+                    <span style="color: gray; text-align: justify;font-size: 12pt;">Seawed / garlic / blackpepper /
+                        curry / chillie / bbq / cheese</span>
+                    <!-- <button class="btn btn-primary"
+                        style="float: right; background-color: #2F74AB;margin-top: 18px;">Tambah</button> -->
+                    <div style="float: right;">
+                        <img src="assets/img/catatan.png" width="20px" style="margin-right:5px;" data-toggle="modal" data-target="#exampleModal">
+                        <img src="assets/img/minus.png" width="20px" style="margin-right:5px;" onclick="tambah('minus')">
+                        <span style="margin-right: 10px;" id="jml">1</span>
+                        <img src="assets/img/plus.png" width="20px" style="margin-right:5px;" onclick="tambah('tambah')">
+                    </div>
+                    <b style="color: #FF9900;"><br>Rp. 18.000</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-left: 5%; margin-right: 5%; width: 90%;">
+        <table>
+            <tr>
+                <td><img src="assets/img/makan22.jpg" width="100px" height="100px"
+                        style="margin-right: 15px; border-radius: 5px; margin-bottom: 10px;"></td>
+                <td>
+                    <b>Wing Squid <span style="float: right; color: red;">x</span></b>
+                    <br>
+                    <span style="color: gray; text-align: justify;font-size: 12pt;">Seawed / garlic / blackpepper /
+                        curry / chillie / bbq / cheese</span>
+                    <!-- <button class="btn btn-primary"
+                                        style="float: right; background-color: #2F74AB;margin-top: 18px;">Tambah</button> -->
+                    <div style="float: right;">
+                        <img src="assets/img/catatan.png" width="20px" style="margin-right:5px;" data-toggle="modal"
+                            data-target="#exampleModal">
+                        <img src="assets/img/minus.png" width="20px" style="margin-right:5px;" onclick="tambah('minus')">
+                        <span style="margin-right: 10px;" id="jml">1</span>
+                        <img src="assets/img/plus.png" width="20px" style="margin-right:5px;" onclick="tambah('tambah')">
+                    </div>
+                    <b style="color: #FF9900;"><br>Rp. 18.000</b>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <b>Detail Pesanan</b>
+        <br>
+        <br>
+        <div style="float : left;color: gray;">
+            No Pesanan
+        </div>
+        <div style="float : right; width: 150px; color: gray;">
+            Tanggal
+        </div>
+        <br>
+        <div style="float : left;">
+            <b>XD-89100-B</b>
+        </div>
+        <div style="float : right; width: 150px;">
+            <b>15 Nov 2019, 16:08</b>
+        </div>
+        <br>
+        <br>
+        <div style="float : left;color: gray;">
+            Atas Nama
+        </div>
+        <div style="float : right; width: 150px; color: gray;">
+            NO. MEJA
+        </div>
+        <br>
+        <div style="float : left;">
+            <b>Baskara Putra</b>
+        </div>
+        <div style="float : right; width: 150px;">
+            <b>03</b>
+        </div>
+        <br>
+        <br>
+        <div style="float : left;color: gray;">
+            <b style="color: black;">Chicken Pok Pok</b>
+            <br>
+            1 porsi
+        </div>
+        <div style="float : right">
+            18.000
+        </div>
+        <br>
+        <br>
+        <div style="float : left;color: gray;">
+            <b style="color: black;">Wing Squid</b>
+            <br>
+            1 porsi
+        </div>
+        <div style="float : right">
+            20.000
+        </div>
+        <br>
+        <br>
+        <hr style="display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: inset;
+            border-width: 1px; background-color: black;">
+        <div style="float : left;color: gray;">
+            <b style="color: black;">Total</b>
+        </div>
+        <div style="float : right">
+            38.000
+        </div>
+    </div>
+    <div style="margin-left: 5%; margin-right: 5%;">
+        <button class="btn btn-primary form-control" style="background-color: #2F74AB;">Bayar Sekarang</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tambahkan Catatan : </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea type="text" class="form-control" rows="8"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript">
+        function tambah(xx) {
+            let val = 0
+            let oldval = $('#jml').text()
+            if(xx==='tambah')
+                oldval=parseInt(oldval)+1
+            if (xx === 'minus')
+                oldval = parseInt(oldval) - 1
+            if(oldval<1)
+                oldval=1
+            $('#jml').text(oldval)
+            return val
+        }
+    </script>
+</html>

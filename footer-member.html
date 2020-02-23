@@ -1,0 +1,35 @@
+<div class="footer" style="max-height: 9%;" id="tes">
+    <ul style="display : none" id="extra">
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/dompet.png" width="50px" height="50px"></li>
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/scan.png"></li>
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/qrcode.png" width="50px" height="50px"
+                data-toggle="modal" data-target="#exampleModal5"></li>
+    </ul>
+    <ul style="display : inline">
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/home.png" width="40px" height="40px"></li>
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/aktivitas.png" width="40px" height="40px">
+        </li>
+        <li style="display : inline;margin-right: 5%;" id="scan"><img src="assets/img/scan.png"></li>
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/favorit.png" width="40px" height="40px">
+        </li>
+        <li style="display : inline;margin-right: 5%;"><img src="assets/img/profile.png" width="40px" height="40px">
+        </li>
+    </ul>
+</div>
+<script>
+    x = -1
+    y = 1
+    $(document).ready(function () {
+        $("#tes").click(function () {
+            y = y * -1;
+            if (x == 1 && y == 1) {
+                $("#extra").slideToggle();
+                x = x * -1;
+            }
+        });
+        $("#scan").click(function () {
+            $("#extra").slideToggle();
+            x = x * -1;
+        });
+    });
+</script>

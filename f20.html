@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/angular.js"></script>
+</head>
+<body ng-app="">
+    <div style="position: absolute; color: white; width: 100%; margin-top: 10px;">
+        <b style="margin-left: 5%; background-color: rgba(51, 51, 51, 0.3);"><img src="assets/img/belok-kiri.png" style="width: 20px; margin-right: 20px;"><span style="opacity: 1;">Detail Pesanan</span></b>
+        <img src="assets/img/share.png" width="30px" style="float: right; margin-right: 5%; ">
+        <img src="assets/img/loves.png" width="30px" style="float: right; margin-right: 5%; ">
+    </div>
+    <img src="assets/img/makan22.jpg"  style="width: 100%;">
+    <div style="width: 90%; margin-top: 20px; margin-left: 5%; margin-right: 5%;">
+        <b>Wagyu Beef Complete</b>
+        <span style="float: right;">12 Nov</span>
+        <br>
+        <span style="color: #FF9900;">Rp 280.000</span>
+        <br>
+        <span style="color: #27AE60;">Selesai</span>
+        <br>
+        <hr>
+        No Pesanan
+        <span style="float: right;">GMF-2927830003</span>
+        <hr>
+        <b style="">Ringkasan Pemesanan</b>
+        <br>
+        <br>
+        <span>1x</span>
+        <span style="margin-left: 10px;">Wagyu Beef</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <br>
+        <span>1x</span>
+        <span style="margin-left: 10px;">Wagyu Beef</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <br>
+        <span>1x</span>
+        <span style="margin-left: 10px;">Wagyu Beef</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <br>
+        <span>1x</span>
+        <span style="margin-left: 10px;">Wagyu Beef</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <hr>
+        <span>1x</span>
+        <span style="margin-left: 10px;">Subtotal</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <br>
+        <span>1x</span>
+        <span style="margin-left: 10px;">PPN</span>
+        <span style="float: right;">Rp. 180.000</span>
+        <hr>
+        <b>
+        <span style="margin-left: 10px;">Total Harga</span>
+        <span style="float: right;">Rp. 180.000</span>
+        </b>
+        <br>
+        <br>
+        <buton class="btn btn-primary form-control" style="background-color: #2F74AB"><img src="assets/img/repeat.png" width="15px" style="margin-right: 10px;"> <b>Pesan Ulang</b></buton>
+        <br>
+        <br>
+        <button
+        class="form-control"
+        style="background: #FFFFFF;
+        border: 1px solid #2F74AB;
+        box-sizing: border-box;
+        border-radius: 6px;">
+            <b style="color: #2F74AB;" data-toggle="modal" data-target="#ulasan">Berikan Ulasan</b>
+        </button>
+    </div>
+    <div ng-include="'ulasan.html'"></div>
+</body>
+</html>

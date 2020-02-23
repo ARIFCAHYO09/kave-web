@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <script src="assets/js/angular.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body ng-app="">
+    <div style="background-color: #3FA0EE;">
+            <table style=" width: 100%;">
+                <tr>
+                    <th width="40%" style="color : white;"><p style="margin-left: 5%;margin-top: 4%;">Selamat Datang,<br>Ayo cek transaksi Hari ini!</p></th>
+                    <th style="text-align: right;">
+                        <img src="assets/img/keranjang.png" width="50px" height="50px">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" style="border-radius: 50%; margin-right: 5%;" width="70px" height="70px" onclick="window.location='/profil.html'">
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button class="btn-large btn-aktif" style="margin-left: 10%;">Dalam Proses</button>
+        <button class="btn-large btn-mati" style="margin-left: 2%;" onclick="window.location='dashboard_selesai.html'">Selesai</button>
+        <br>
+        <br>
+        <table style="margin-left: 10%;">
+            <tr>
+                <td>
+                    <b data-toggle="modal" data-target="#exampleModal">Arif Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">5 menit yang lalu</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Eko Cahyo</b>
+                    <p>Rp. 50.000, 3 pesanan <img src="assets/img/next.png"> </p>
+                    <p style="color: grey;">2 bulan yang lalu</p>
+                </td>
+            </tr>
+        </table>
+        <div ng-include="'footer.html'">
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/user.png" width="40px" height="40px">
+                        <b>Arif Cahyo Prasetyo</b> &nbsp;
+                        <div style="float: right;margin-top: 10px;">
+                        <img src="assets/img/proses.png" width="25px" height="25px">
+                        <b style="color : #FF9900;">Proses</b>
+                        </div>
+                        <br>
+                        <span style="font-size: 12px;margin-left: 45px; color: grey;">No Pesanan : F-778A</span>
+                        <br>
+                        <br>
+                        <span style="font-size: 12px;margin-left: 45px; color: grey;">Total Pembayaran</span>
+                        <div style="float: right;">
+                        <span style="font-size: 12px; color: grey;">Metode Pembayaran</span>
+                        </div>
+                        <br>
+                        <b style="margin-left: 45px;">Rp. 52000</b>
+                        <div style="float: right;">
+                        <b>Transfer Bank</b>
+                        </div>
+                        <br>
+                        <br>
+                        <img src="assets/img/pesanan.png" width="25px" height="25px"> &nbsp; <b>
+                            4 Item Pesanan
+                        </b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                        <hr style="border-width: 3px;">
+                        <b>French Fries</b>
+                        <br>
+                        <span style="color : grey;">jumlah : 1</span>
+                        <b style="float: right;">Rp. 12.000</b>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary">PESANAN SELESAI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <center>
+                        <img src="assets/img/logo2.png" width="50px" height="50px">
+                        <br>
+                        <br>
+                       <div style="background: linear-gradient(182.67deg, #30A3E6 -0.28%, #3680BB 49.5%, #23659A 96.26%);border-radius: 10px;width: 300px; height: 445px;">
+                        <br>
+                        <div style="width: 300px; height: 50px">
+                        <p style="text-align: left; margin-left: 5%;color: white;font-size: 14pt;"><b>Saldo</b>
+                            <b style="float: right;margin-right: 5%;">Kave <br> Member</b>
+                            <br>
+                            <b>Rp. 500.000</b>
+                        </p>
+                        </div>
+                        <br>
+                        <div style="background-color: white; width: 225px; height: 325px; border-radius: 15px;">
+                            <br>
+                            <img src="assets/img/wajah.png" width="50px" height="50px" style="border-radius: 50%;">
+                            <br>
+                            <b>Citizen’s Coffee & Eatery</b>
+                            <br>
+                            <b>085334190466</b>
+                            <br>
+                            <br>
+                            <div id="qrcode"></div>
+                        </div>
+                        <script type="text/javascript">
+                            new QRCode("qrcode", {
+                                    text: "http://jindo.dev.naver.com/collie",
+                                    width: 175,
+                                    height: 175,
+                                    colorDark: "#000000",
+                                    colorLight: "#ffffff",
+                                    correctLevel: QRCode.CorrectLevel.H
+                                });
+                        </script>
+                       </div>
+                       <br>
+                       <img src="assets/img/qr.png" style="margin-right: 60px;" width="40px"
+                       height="40px">
+                       <img src="assets/img/Bantuan.png" width="40px" height="40px">
+                       <br>
+                        </center>
+                    </div>
+            </div>
+        </div>
+
+</body>
+</html>

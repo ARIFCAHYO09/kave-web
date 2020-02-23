@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/button_dashboard.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="assets/js/angular.js"></script>
+</head>
+<body ng-app="">
+    <div style="position: absolute; color: white; width: 100%; margin-top: 10px;">
+        <b style="margin-left: 5%; background-color: rgba(51, 51, 51, 0.3);"><img src="assets/img/belok-kiri.png" style="width: 20px; margin-right: 20px;"><span style="opacity: 1;">Detail Pesanan</span></b>
+        <img src="assets/img/share.png" width="30px" style="float: right; margin-right: 5%; ">
+        <div style="float: right; margin-right: 5%; width: 30px; height: 30px; background-color: rgba(51, 51, 51, 1); border-radius: 50%;">
+            <img src="assets/img/basket.png" width="20px" style="margin-left: 5px;margin-top: 4px;">
+        </div>
+        <div style="background-color: white; border-radius: 50%; width: 40px; margin-top: 160px;margin-left: 310px;">
+            <img src="assets/img/lope2.png" width="30px" style="margin-left: 5px;margin-top: 4px;">
+        </div>
+    </div>
+    <img src="assets/img/makan22.jpg"  style="width: 100%;">
+    <div style="width: 90%; margin-top: 20px; margin-left: 5%; margin-right: 5%;">
+        <b>Wagyu Beef Complete</b>
+        <br>
+        <span style="color: #FF9900;">Rp 280.000</span>
+        <br>
+        <span style="color: gray;">Seawed / garlic / blackpepper / curry / bbq / cheese / spicy chicken</span>
+        <br>
+        <hr>
+        <b>Deskripsi</b>
+        <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed amet amet erat scelerisque quam. Sit gravida scelerisque
+        consequat, in tortor. Risus aliquam cras tincidunt commodo ut pellentesque vestibulum eu. Nam adipiscing suspendisse
+        phasellus sem. Venenatis nisl donec varius mattis mauris.. <a href="#">Selengkapnya</a></p>
+        <hr>
+        <b>Review</b>
+        <br>
+        <br>
+        <div>
+            <table>
+                <tr>
+                    <td><img src="assets/img/wajah.png" width="45px" style="border-radius: 50%;"></td>
+                    <td width="10px"></td>
+                    <td>
+                        <b>Alia Ayu Wijaya</b>
+                        <br>
+                        <span style="color: gray;">08/05/2019</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <img src="assets/img/Star.png" style="margin-right: 6px; width: 20px;">
+                        <img src="assets/img/Star.png" style="margin-right: 6px; width: 20px;">
+                        <img src="assets/img/Star.png" style="margin-right: 6px; width: 20px;">
+                        <img src="assets/img/Star.png" style="margin-right: 6px; width: 20px;">
+                        <img src="assets/img/DeadStar.png" style="margin-right: 6px; width: 20px;">
+                        <p style="color: gray;">Makanannya Enak</p>
+                    </td>
+                </tr>
+            </table>
+            <a href="#" style="float: right;">Lihat Semua Ulasan (8)</a>
+            <br>
+            <br>
+            Jumlah
+            <div style="float: right;">
+            <img src="assets/img/catatan.png" width="30px" style="margin-right:5px;" data-toggle="modal"
+                data-target="#exampleModal">
+            <img src="assets/img/minus.png" width="30px" style="margin-right:5px;" onclick="tambah('minus')">
+            <span style="margin-right: 10px;" id="jml">1</span>
+            <img src="assets/img/plus.png" width="30px" style="margin-right:5px;" onclick="tambah('tambah')">
+            </div>
+            <button class="btn btn-primary form-control" style="background-color: #2F74AB;"><b>Tambah</b></button>
+            <div style="height: 150px;"></div>
+            <div class="footer"
+                style="background-color: #2F74AB; margin-bottom: 10%; margin-left: 10%; width: 80%; border-radius: 10px; height: 7%; margin-bottom: 20%">
+                <table style="color: white; margin-left: 5%; margin-right: 5%;">
+                    <tr>
+                        <td>Jumlah</td>
+                        <td width="30px"></td>
+                        <td>Total Harga</td>
+                        <td width="60px"></td>
+                        <td rowspan="2"><img src="assets/img/keranjang.png" width="35px" style="border-radius: 50%;"></td>
+                    </tr>
+                    <tr>
+                        <td>1 Item</td>
+                        <td width="30px"></td>
+                        <td>Rp. 18.000</td>
+                        <td width="50px"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

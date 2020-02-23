@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <script src="assets/js/hari.js"></script>
+</head>
+<body>
+    <div style="margin: auto; width: 350px;">
+        <div>
+            <br>
+            <h3 style="text-align: left;"> <img src="assets/img/back.png">&nbsp;Info Restaurant/Cafe</h3>
+        </div>
+        <br>
+        <br>
+        <p>Nama Usaha</p>
+        <input type="text" class="form-control">
+        <br>
+        <p>Jam Buka</p>
+        <input type="time" class="form-control">
+        <br>
+        <p>Jam Tutup</p>
+        <input type="time" class="form-control">
+        <br>
+        <p>Hari Operasional</p>
+        <input type="text" class="form-control"  data-toggle="modal" data-target="#exampleModal" id="hari">
+        <br>
+        <p>Alamat Lengkap</p>
+        <textarea type="text" class="form-control"></textarea>
+        <br>
+        <br>
+        <p id="demo"></p>
+        <center>
+            <button class="btn-primary" style="border-radius: 5px;">
+                <h2>SIMPAN</h2>
+            </button>
+        </center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width: 500px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hari Operasional</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr>
+                            <td width = 450px><b>Minggu</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Minggu" id="hari0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Senin</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Senin" id="hari1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Selasa</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Selasa" id="hari2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Rabu</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Rabu" id="hari3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Kamis</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Kamis" id="hari4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Jumat</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Jumat" id="hari5">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width=450px><b>Sabtu</b></td>
+                            <td>
+                                <input type="checkbox" name="hari" value="Sabtu" id="hari6">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"
+                     onclick="document.getElementById('hari').value='';hari()"
+                     >
+
+                     Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

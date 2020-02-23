@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/switch.css">
+    <script type="text/javascript">
+        var on = 0
+        function cekOn() {
+            if (on == 0) {
+                document.getElementById('on').innerHTML = 'Hidup'
+                on=1
+            } else {
+                document.getElementById('on').innerHTML = 'Mati'
+                on=0
+            }
+            console.log(on);
+        }
+    </script>
+</head>
+<body>
+   <div style="margin: auto;width: 350px;">
+        <br>
+        <h2><img src="assets/img/back.png">&nbsp;Pengaturan Umum</h2>
+        <br>
+        <br>
+        <p style="color: grey;">Tentang</p>
+        <b>Kave Merchant <img src="assets/img/next.png"> </b>
+        <br>
+        <br>
+        <p style="color: grey;">FAQ</p>
+        <b>Kave Merchant <img src="assets/img/next.png"> </b>
+        <br>
+        <br>
+        <p style="color: grey;">Syarat dan Ketentuan</p>
+        <b>Kave Merchant <img src="assets/img/next.png"> </b>
+        <br>
+        <br>
+        <p style="color: grey;">Ubah</p>
+        <b>Email dan Kata Sandi <img src="assets/img/next.png"> </b>
+        <br>
+        <br>
+        <p style="color: grey;">Pemberitahuan</p>
+        <b id="on">Mati</b>
+            <label class="switch" style="margin-left: 200px;">
+                <input type="checkbox" onclick="cekOn()" id="tbl">
+                <span class="slider round"></span>
+            </label>
+
+   </div>
+</body>
+</html>

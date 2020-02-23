@@ -1,0 +1,28 @@
+html {
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+body {
+    min-height: 100%;
+    background-repeat: no-repeat;
+}
+
+.btnmulai {
+    /* MULAI */
+
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    /* UTAMA */
+
+    color: #2F74AB;
+}
+
+
